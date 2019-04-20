@@ -13,4 +13,5 @@ var typed = new Typed('h1', {
   strings: ["", "Need an App ,We are here for You"],
   typeSpeed: 60 
 }); 
-
+$('.parallax-window').parallax({imageSrc: './assets/parallaz.jpg'});
+jQuery(window).trigger('resize').trigger('scroll');
