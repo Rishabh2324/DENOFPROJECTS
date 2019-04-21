@@ -224,13 +224,14 @@ nav ul li a:hover {
     width: 100%;
 }
 .paraclass2 {
-    margin-top: 50px;
-    color: white;
+    margin-top: 25px;
+    color: black;
     font-family: 'Prompt', sans-serif;  
 }
 .parallax-window {
 	min-height: 400px;
 	background: transparent;
+    background-size: cover;
 }
 section#contact {
   background-color: #222222;

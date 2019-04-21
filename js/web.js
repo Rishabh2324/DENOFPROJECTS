@@ -15,3 +15,7 @@ var typed = new Typed('h1', {
 }); 
 $('.parallax-window').parallax({imageSrc: './assets/parallaz.jpg'});
 jQuery(window).trigger('resize').trigger('scroll');
+$('.parallax-window').parallax({
+    naturalWidth: 600,
+    naturalHeight: 400
+  });
