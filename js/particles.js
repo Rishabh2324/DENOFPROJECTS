@@ -1,7 +1,7 @@
 /* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com
 /* MIT license: http://opensource.org/licenses/MIT
-/* Demo / Generator : vincentgarreau.com/particles.js
+/* Demo / Generator : vincentgarreau.com/particles.js   
 /* GitHub : github.com/VincentGarreau/particles.js
 /* How to use? : Check the GitHub README
 /* v2.0.0
@@ -16,8 +16,8 @@ var pJS = function(tag_id, params){
     canvas: {
       el: canvas_el,
       w: canvas_el.offsetWidth,
-      h: canvas_el.offsetHeight
-    },
+      h: canvas_el.offsetHeight,
+        },
     particles: {
       number: {
         value: 400,

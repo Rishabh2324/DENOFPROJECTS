@@ -1,12 +1,12 @@
-#skyblue {
-    background-color:white;
-}
+
+
 body {
-	margin:0;
-	padding:0;
-	background:#fff;
 	font-family:'Montserrat',sans-serif;
 	font-size:12px;
+    background-color: #1658ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.79'%3E%3Cpolygon fill='%234573d8' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23738eb0' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23a2aa89' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23d0c561' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23ffe03a' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 ul {
 	margin:0;
@@ -17,6 +17,7 @@ ul {
 li {
 	padding:0;
 	margin:0;
+    
 }
 nav {
 	text-align:center;
@@ -31,6 +32,7 @@ nav ul {
 }
 nav ul li {
 	display:inline-block;
+   
 }
 nav ul li a {
 	color:#333;
@@ -42,10 +44,11 @@ nav ul li a {
 	-moz-transition:all .2s linear 0s;
 	-webkit-transition:all .2s linear 0s;
 	-o-transition:all .2s linear 0s;
-	font-size:16px;
+	font-size:17px;
+    
 }
 nav ul li a:hover {
-	color: #34B484;
+	color: #6c91e0;    
 }
 /*styling open close button*/
 .button {
@@ -60,9 +63,8 @@ nav ul li a:hover {
 	text-decoration:none;
 }
 .btn-open:after {
-	color:#333;
-	content:"\f0c9";
-	font-family:"fontawsome";
+	color: #6c91e0;
+	
 	transition-property:all .2s linear 0s;
 	-moz-transition:all .2s linear 0s;
 	-webkit-transition:all .2s linear 0s;
@@ -90,7 +92,7 @@ nav ul li a:hover {
 	top:0;
 	height:100%;
 	width:100%;
-	background:#333;
+	background:#6c91e0;
 	overflow:auto;
 	z-index:99;
 }
@@ -136,9 +138,10 @@ nav ul li a:hover {
 }
 .wrap ul.wrap-nav ul li a {
 	color:#f0f0f0;
+    font-size: 50px;
 }
 .wrap ul.wrap-nav ul li a:hover {
-	color:#34B484;
+	color:yellow ;
 }
 .social {
 	font-size:25px;
@@ -170,7 +173,7 @@ nav ul li a:hover {
 }
 .social-icon:hover {
 	background:#34B484;
-	color:#f0f0f0;
+	color:yellow;
 }
 .social-icon i {
 	margin-top:12px;
@@ -207,16 +210,21 @@ nav ul li a:hover {
 	font-size:20px;
 	color:cornflowerblue;
 	text-align: center;
-    margin-bottom: 200px;
+    margin-bottom:300px;
    font-family: 'Prompt', sans-serif; 
     
 }
 
+.content3 {
+    margin: 150px;
+        background-image: url(../assets/map-image.png);
+
+}
 .paraclass {
     margin-top: 200px;
      font-family: 'Prompt', sans-serif;  
     font-size: 20px;
-    color: gray;
+    color: black;
     
 }
 .stubbed {
@@ -225,7 +233,7 @@ nav ul li a:hover {
 }
 .paraclass2 {
     margin-top: 25px;
-    color: black;
+    color: white;
     font-family: 'Prompt', sans-serif;  
 }
 .parallax-window {
@@ -233,58 +241,87 @@ nav ul li a:hover {
 	background: transparent;
     background-size: cover;
 }
-section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
+#portfolio{
+    margin: 150px;
 }
-section#contact .section-heading {
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width:225px;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
   color: white;
 }
-section#contact .form-group {
-  margin-bottom: 25px;
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
 }
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
+#contact-form h3 {
+    text-align: center;
+    font-size: 60px;
+    color: coral;
 }
-section#contact .form-group input.form-control {
-  height: auto;
+#contact-form button[type="submit"] {
+    cursor:pointer;
+    
+    border:none;
+    background:gray;
+    color:white;
+    margin:0 0 5px;
+    padding:10px;
+    border-radius:5px;
+    
 }
-section#contact .form-group textarea.form-control {
-  height: 236px;
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea {
+    width:100%;
+    box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    -webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    -moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    border-radius:5px;
 }
-section#contact .form-control:focus {
-  border-color: #fed136;
-  box-shadow: none;
+.formstyle{
+    text-align: center;
+    background-color:black;
+    background-image: url(/assets/map-image.png);
+    opacity:0.5;
 }
-section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
+#contact-form span {
+    font-size: 30px;
+    color: white;
 }
-section#contact :-moz-placeholder {
-  /* Firefox 18- */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact .text-danger {
-  color: #e74c3c;
-}
+
+
+
+
+
